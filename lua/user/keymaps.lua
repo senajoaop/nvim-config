@@ -69,3 +69,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+
+-- Run current Python script
+keymap("n", "<leader>p", ":!python3 %<CR>", opts)
