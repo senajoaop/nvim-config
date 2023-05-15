@@ -1,58 +1,54 @@
-# Neovim from scratch
+# Neovim Configuration Repository
 
-## Try out this config
+This repository contains all the necessary configurations for the Neovim application. It provides a comprehensive set of configuration files and plugins to enhance your Neovim experience.
 
-Make sure to remove or move your current `nvim` directory
+## Usage
 
-```
-git clone git@github.com:ChristianChiarulli/Neovim-from-scratch.git ~/.config/nvim
-```
+To use the configurations from this repository, you have two options:
 
-Run `nvim` and wait for the plugins to be installed 
+### Option 1: Complete Version
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
+1. Clone the repository: `git clone https://github.com/senajoaop/nvim_config.git`
+2. Copy all the files from the cloned repository to the Neovim configuration folder on your operating system.
+   - For Windows:
+     - Open a command prompt or PowerShell.
+     - Run the following command to navigate to the Neovim configuration folder: `cd %USERPROFILE%\AppData\Local\nvim`
+     - Copy the files from the cloned repository to the current directory: `xcopy /E /Y path\to\cloned\repository\* .`
+   - For Linux distributions:
+     - Open a terminal.
+     - Run the following command to navigate to the Neovim configuration folder: `cd ~/.config/nvim`
+     - Copy the files from the cloned repository to the current directory: `cp -R path/to/cloned/repository/* .`
 
+### Option 2: New Version
 
-each video will be associated with a branch so checkout the one you are interested in
+1. Clone the repository: `git clone https://github.com/senajoaop/nvim_config.git`
+2. Copy only the `new_version/nvim` folder from the cloned repository to the Neovim configuration folder on your operating system.
+   - For Windows:
+     - Open a command prompt or PowerShell.
+     - Run the following command to navigate to the Neovim configuration folder: `cd %USERPROFILE%\AppData\Local\nvim`
+     - Copy the `new_version\nvim` folder from the cloned repository to the current directory: `xcopy /E /Y path\to\cloned\repository\new_version\nvim .`
+   - For Linux distributions:
+     - Open a terminal.
+     - Run the following command to navigate to the Neovim configuration folder: `cd ~/.config/nvim`
+     - Copy the `new_version/nvim` folder from the cloned repository to the current directory: `cp -R path/to/cloned/repository/new_version/nvim/* .`
 
-## Get healthy
+## Neovim Configuration Folder Location
 
-Open `nvim` and enter the following:
+The Neovim configuration folder is typically located in the following directories on different operating systems:
 
-```
-:checkhealth
-```
+- For Windows: `%USERPROFILE%\AppData\Local\nvim`
+- For Linux distributions: `~/.config/nvim`
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+Please note that the paths provided above are default locations. If you have a customized Neovim configuration folder, please adjust the commands accordingly.
 
-So let's fix that
+## Contributing
 
-First we'll fix copy/paste
+Contributions to this repository are welcome! If you have any improvements, suggestions, or bug fixes, please feel free to contribute by following these steps:
 
-- On mac `pbcopy` should be builtin
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m "Add your commit message"`
+4. Push the branch to your forked repository: `git push origin feature/your-feature-name`
+5. Open a pull request to the main repository.
 
-- On Ubuntu
-
-  ```
-  sudo apt install xsel
-  ```
-
-- On Arch Linux
-
-  ```
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```
-  npm i -g neovim
-  ```
+Please ensure that your contributions align with the existing coding style and best practices.
