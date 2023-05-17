@@ -8,7 +8,7 @@ To use the configurations from this repository, you have two options:
 
 ### Option 1: Complete Version
 
-1. Clone the repository: `git clone https://github.com/senajoaop/nvim_config.git`
+1. Clone the repository: `git clone https://github.com/senajoaop/nvim-config.git`
 2. Copy all the files from the cloned repository to the Neovim configuration folder on your operating system.
    - For Windows:
      - Open a command prompt or PowerShell.
